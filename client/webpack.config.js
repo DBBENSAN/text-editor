@@ -24,14 +24,14 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'src-sw.js',
+        swDest: 'src-sw.js'
       }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
         name: 'Just Another Text Editor',
-        short_name: 'JATE',
-        description: 'just another texas editor',
+        short_name: 'J.A.T.E.',
+        description: "This application installs 'Just Another Text Editor' or 'JATE' for short.",
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: '/',
@@ -39,11 +39,11 @@ module.exports = () => {
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
-            sizes: [96, 128, 192, 256, 384, 512],
+            sizes: [96, 128, 192, 256, 384, 512], //Various image sizes
             destination: path.join('assets', 'icons'),
-          },
-        ],
-      }),
+          }
+        ]
+      })
     ],
 
     module: {
@@ -60,10 +60,10 @@ module.exports = () => {
             options: {
               presets: ['@babel/preset-env'],
               plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
-            },
-          },
-        },
+            }
+          }
+        }
       ],
-    },
+    }
   };
 };
