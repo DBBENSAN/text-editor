@@ -23,9 +23,9 @@ This is just another text editor, with no fancy features or gimmicks. It's built
 2. Open your browser and navigate to `http://localhost:3000`
 3. Begin typing in the text editor to create a new document or load an existing one.
 
-You can access the text editor online here:
-```
-https://pure-crag-79082.herokuapp.com/
-```
+[You can access the text editor online here:](https://pure-crag-79082.herokuapp.com/)
+
+
+
 
 
